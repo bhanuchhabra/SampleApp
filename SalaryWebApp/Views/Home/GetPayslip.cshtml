@@ -1,0 +1,48 @@
+﻿@model SalaryWebApp.Models.Payslip
+
+@{
+    ViewBag.Title = "GetPayslip";
+}
+
+<h2>Payslip</h2>
+
+<div>
+    <dl class="dl-horizontal" style="border-width:medium; border-radius:2px; border-style:groove; border-color:darkgrey">
+        <dt>
+            @Html.DisplayNameFor(model => model.GrossIncome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GrossIncome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IncomeTax)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IncomeTax)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NetIncome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NetIncome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SuperAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SuperAmount)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to employee list", "EmployeeList", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to Home", "Index")
+</p>

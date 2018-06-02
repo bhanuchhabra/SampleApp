@@ -1,0 +1,20 @@
+Release Notes 1.0:
+
+1. Assumptions:
+	1.1. I was not able to see if payment start date drives any logic so no logic is there that depends on the date
+	1.2. Date is given as "Date Range" but I kept it as plain DateTime
+	1.3. Assumptions for code logic:
+		1.3.1. Used Strategy pattern that is based on Financial Year, currently I kept it as constant 2017, but it can be made to work as per
+		the payment date
+		1.3.2. So based on the tax strategy (if any), Payslip format might change, that is handled via Payslip Factory.
+	1.4. Instead of using any Database/EF architecture, I used a Repository class, which is bare minimum repository with a static store.
+	1.5. Due to above point, the WebAPI implementation is also very limited. Will work on this and will change the implementation so that I can make it more suitable for what is being asked.
+	1.6. ** Kindly take note: This project uses C# 7.1, developed using VS2017 **. Please make sure you are running code with C#7.1
+	1.7. Use of CSS, JQuery and JQuery based controls etc. is bare minimum.
+2. Link to source code : https://github.com/bhanuchhabra/SampleApp
+3. How to run instructions:
+	3.1. Run application. Make sure WebApp is set as startup app.
+	3.2. At Home page, click on Create Employee or Let's Start
+	3.3. After Creating Employee click on EmployeeList at top bar
+	3.4. Click on Generate Payslip to see the payslip information
+4. Test Inputs and outputs are as is stated in Unit Test Project
